@@ -1,0 +1,25 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TestEncounterProfile",
+  "url": "http://example.org/StructureDefinition/TestEncounterProfile",
+  "name": "TestEncounterProfile",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.type.coding",
+        "path": "Encounter.type.coding",
+        "patternCoding": {
+          "code": "3",
+          "system": "http://example.org/CodeSystem/TestCodeSystem"
+        }
+      }
+    ]
+  }
+}
