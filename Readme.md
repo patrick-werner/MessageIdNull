@@ -1,4 +1,4 @@
-Java FHIR Validator: Null Message ID Bug
+## Java FHIR Validator: Null Message ID Bug
 
 This repository demonstrates a bug in the Java FHIR Validator where the messageId field is unexpectedly null. The validator should always produce a non-null identifier for each validation message.
 
